@@ -18,25 +18,41 @@
                 <span id="answer" class="ml-4 font-weight-bold"></span>
             </form>
         </div>
-        </div>
-        <!-- Radio button example  -->
-        <div class="my-4 p-4 border border-secondary">
-            <h2 class="pb-2">Example 2 - Gender Selector</h2>
+    </div>
+    <!-- Radio button example  -->
+    <div class="my-4 p-4 border border-secondary">
+        <h2 class="pb-2">Example 2 - Gender Selector</h2>
 
-            <form class="form">
-                <div class="form-check form-check-inline">
-                    <input type="radio" name="gender" value="male" class="form-check-input">
-                    <label class="form-check-label mr-3">Male</label>
-                    <input type="radio" name="gender" value="female" class="form-check-input">
-                    <label class="form-check-label mr-3">Female</label>
-                    <input type="radio" name="gender" value="other" checked class="form-check-input">
-                    <label class="form-check-label">Other</label>
-                </div>
-                <button type="button" id="genderselect" class="btn btn-warning">Show Selection</button>
-            </form>
-            <h5 id="selected"></h5>
-        </div>
+        <form class="form">
+            <div class="form-check form-check-inline">
+                <input type="radio" name="gender" value="male" class="form-check-input">
+                <label class="form-check-label mr-3">Male</label>
+                <input type="radio" name="gender" value="female" class="form-check-input">
+                <label class="form-check-label mr-3">Female</label>
+                <input type="radio" name="gender" value="other" checked class="form-check-input">
+                <label class="form-check-label">Other</label>
+            </div>
+            <button type="button" id="genderselect" class="btn btn-warning">Show Selection</button>
+        </form>
+        <h5 id="selected"></h5>
+    </div>
 
-        <script src="adder.js"></script>
+    <!-- Dropdown list -->
+    <div class="my-4 p-4 border border-secondary">
+        <h2 class="pb-2">Example 3 - Drop down list</h2>
+        <form>
+            <div class="col-4">
+                <select class="form-control" id="cars">
+                    <option value="0">Volvo</option>
+                    <option value="1">Subaru</option>
+                    <option value="2">Mercedes</option>
+                    <option value="3">Audi</option>
+                </select>
+            </div>
+        </form>
+        <h5 id="selectedcar" class="pt-3"></h5>
+    </div>
+
+    <script src="adder.js"></script>
 </body>
 </html>

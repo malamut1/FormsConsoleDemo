@@ -14,3 +14,23 @@ let selectGender = function () {
 
 let selectGen = document.querySelector("#genderselect");
 selectGen.onclick = selectGender;
+
+// Car selector - dropdown list
+let selectCar = function () {
+    let car = document.querySelector("#cars").value;
+    document.querySelector("#selectedcar").innerHTML = `Selected: ${cars[car].make} which costs $${cars[car].price}`;
+};
+
+let cars = [
+    { make: "Volvo", price: 30000 },
+    { make: "Subaru", price: 40000 },
+    { make: "Mercedes", price: 50000 },
+    { make: "Audi", price: 60000 }
+];
+
+let selection = document.querySelector("#cars");
+selection.onchange = selectCar;
+
+window.onload = function () {
+    selectCar();
+}
